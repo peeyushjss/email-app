@@ -4,13 +4,11 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const index = require('./routes/index');
-// const session = require('express-session');
 const cookieSession = require('cookie-session')
-
 
 const app = express();
 
-app.listen(7000);
+app.listen(8000);
 
 app.set('views', path.join(__dirname, 'view'));
 app.engine('html', require('ejs').renderFile);

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const nodemailer = require('nodemailer');
-const session = require('express-session');
+let nodemailer = require('nodemailer');
+let session = require('cookie-session');
 
 router.get('/', function(req, res) {
     console.log('Peeyush');
