@@ -1,0 +1,8 @@
+{
+    "name": "sample-email-app",
+    "description": "Sample Node JS App for send email.",
+    "repository": "https://github.com/peeyushjss/email-app",
+    "logo": "https://github.com/peeyushjss/email-app",
+    "keywords": ["node", "express", "static"],
+    "image": "heroku/nodejs"
+}
