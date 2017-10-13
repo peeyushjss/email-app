@@ -5,7 +5,10 @@ const session = require('express-session');
 
 router.get('/', function(req, res) {
     console.log('Peeyush');
-    res.redirect('/settings');
+    res.render('settings.html', {
+        title: "Settings"
+    });
+    // res.redirect('/settings');
 });
 
 router.get('/settings', function(req, res, next) {
