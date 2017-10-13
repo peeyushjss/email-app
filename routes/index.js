@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const session = require('express-session');
 
 router.get('/', function(req, res) {
+    console.log('Peeyush');
     res.redirect('/settings');
 });
 
