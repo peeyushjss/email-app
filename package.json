@@ -1,0 +1,20 @@
+{
+    "name": "email-app",
+    "version": "1.0.0",
+    "author": "Peeyush Kumar",
+    "description": "Sample Node js app for send email",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "body-parser": "~1.16.0",
+        "cors": "^2.8.1",
+        "debug": "~2.6.0",
+        "ejs": "^2.5.6",
+        "express": "~4.14.1",
+        "mongoose": "^4.9.0",
+        "morgan": "~1.7.0",
+        "nodemailer": "^4.0.1",
+        "nodemailer-direct-transport": "^3.3.2"
+    }
+}
