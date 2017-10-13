@@ -5,10 +5,7 @@ const session = require('express-session');
 
 router.get('/', function(req, res) {
     console.log('Peeyush');
-    res.render('settings.html', {
-        title: "Settings"
-    });
-    // res.redirect('/settings');
+    res.redirect('/settings');
 });
 
 router.get('/settings', function(req, res, next) {
@@ -60,7 +57,6 @@ router.post('/email', function(req, res, next) {
                     title: "Error"
                 });
             } else {
-                sessionData.destroy();
                 res.render('success.html', {
                     title: "Success"
                 });

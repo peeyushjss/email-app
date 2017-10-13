@@ -4,7 +4,9 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const index = require('./routes/index');
-const session = require('express-session');
+// const session = require('express-session');
+const cookieSession = require('cookie-session')
+
 
 const app = express();
 
@@ -19,7 +21,15 @@ app.engine('html', require('ejs').renderFile);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(session({secret: 'ssshhhhh'}));
+// app.use(session({secret: 'ssshhhhh'}));
+
+app.set('trust proxy', 1) // trust first proxy
+
+app.use(cookieSession({
+    name: 'session',
+    keys: ['key1', 'key2']
+  }))
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors());
