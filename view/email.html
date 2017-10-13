@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-container">
+            <p style="padding: 20px;" id="profile-name" class="profile-name-card">Email Form</p>
+            <form class="form-signin" method="post" action="/email">
+                <input type="email" id="to" name="to" class="form-control" placeholder="To Email" required autofocus>
+                <!-- <input type="email" id="from" name="email" class="form-control" placeholder="From Email" required> -->
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                <!-- <input type="text" id="body" name="body" class="form-control" placeholder="body" required> -->
+                <textarea rows="4" cols="50" id="body" name="body" class="form-control" placeholder="Body" required></textarea>
+                <br />
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Send</button>
+            </form>        
+        </div>
+    </div>
+</body>
+</html>
